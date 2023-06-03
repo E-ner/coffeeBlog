@@ -13,10 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Routers that helps to route from one page to another in the system
 
+Route::get('/', function () {
+    return view('front-end/index');
+})->name('index');
+Route::get('/menu', function () {
+    return view('pages.menu');
+})->name('home.menu');
+Route::get('/about', function () {
+    return view('pages.about');
+})->name('about');
+Route::get('/service', function () {
+    return view('pages.services');
+})->name('services');
+Route::get('/contact', function () {
+    return view('pages.contact');
+})->name('contact');
+
+
+// Admin dashboard routers
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
