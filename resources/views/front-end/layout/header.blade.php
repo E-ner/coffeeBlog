@@ -14,6 +14,7 @@
                     <a href="{{route('services')}}" class="nav-item nav-link">Service</a>
                     <a href="{{route('home.menu')}}" class="nav-item nav-link">Menu</a>
                     <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
+                    <a href="{{route('clients')}}" class="nav-item nav-link">Testimonials</a>
                 </div>
             </div>
         </nav>

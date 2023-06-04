@@ -35,7 +35,7 @@
                     <p>+012 345 6789</p>
                 </div>
                 <div class="col-sm-4 text-center mb-3">
-                    <i class="far fa-2x fa-envelope mb-3 text-primary"></i>
+                    <i class="far fa-2x fa-envelope mr2 text-primary"></i>
                     <h4 class="font-weight-bold">Email</h4>
                     <p>info@example.com</p>
                 </div>
@@ -49,26 +49,27 @@
                 <div class="col-md-6 pb-5">
                     <div class="contact-form">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <form method='POST' action='{{route("comments")}}'>
+                            @csrf
                             <div class="control-group">
                                 <input type="text" class="form-control bg-transparent p-4" id="name" placeholder="Your Name"
-                                    required="required" data-validation-required-message="Please enter your name" />
+                                   name='name' required="required" data-validation-required-message="Please enter your name" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
                                 <input type="email" class="form-control bg-transparent p-4" id="email" placeholder="Your Email"
-                                    required="required" data-validation-required-message="Please enter your email" />
+                                   name='email' required="required" data-validation-required-message="Please enter your email" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
                                 <input type="text" class="form-control bg-transparent p-4" id="subject" placeholder="Subject"
-                                    required="required" data-validation-required-message="Please enter a subject" />
+                                 name='subject' required="required" data-validation-required-message="Please enter a subject" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
                                 <textarea class="form-control bg-transparent py-3 px-4" rows="5" id="message" placeholder="Message"
                                     required="required"
-                                    data-validation-required-message="Please enter your message"></textarea>
+                                    data-validation-required-message="Please enter your message" name='description'></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
