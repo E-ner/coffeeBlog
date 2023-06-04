@@ -34,6 +34,9 @@ Route::get('/contact', function () {
 
 // Admin dashboard routers
 
+Route::get('/admin', function () {
+    return view('dashboard.index');
+})->name('dashboard');
 
 Auth::routes();
 

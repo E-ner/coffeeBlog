@@ -992,12 +992,12 @@
     <!-- Vendor JS       -->
     <script src="{{asset('backend/vendor/slick/slick.min.js')}}">
     </script>
-    <script src="{{asset('backend/')}}vendor/wow/wow.min.js"></script>
-    <script src="{{asset('backend/')}}vendor/animsition/animsition.min.js"></script>
-    <script src="{{asset('backend/')}}vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    <script src="{{asset('backend/vendor/wow/wow.min.js')}}"></script>
+    <script src="{{asset('backend/vendor/animsition/animsition.min.js')}}"></script>
+    <script src="{{asset('backend/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js')}}">
     </script>
-    <script src="{{asset('backend/')}}vendor/counter-up/jquery.waypoints.min.js"></script>
-    <script src="vendor/counter-up/jquery.counterup.min.js">
+    <script src="{{asset('backend/vendor/counter-up/jquery.waypoints.min.js')}}"></script>
+    <script src="{{asset('backend/vendor/counter-up/jquery.counterup.min.js')}}">
     </script>
     <script src="{{asset('backend/vendor/circle-progress/circle-progress.min.js')}}"></script>
     <script src="{{asset('backend/vendor/perfect-scrollbar/perfect-scrollbar.js')}}"></script>
@@ -1006,7 +1006,7 @@
     </script>vendor/circle-progress/circle-progress.min.js
 
     <!-- Main JS-->
-    <script src="js/main.js"></script>
+    <script src="{{asset('backend/js/main.js')}}"></script>
 
 </body>
 
