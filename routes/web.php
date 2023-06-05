@@ -41,6 +41,8 @@ Route::controller(SiteCotroller::class)->group(function(){
 
 // Admin dashboard routers
 Route::group(['prefix' => 'admin'],function(){
+
+Route::middleware('admin')->group(function(){
 Route::controller(AdminController::class)->group(function(){
     Route::get('/dashboard','dashboard')->name('dashboard');    
 
@@ -66,6 +68,8 @@ Route::controller(AdminController::class)->group(function(){
 
 
     });
+});
+
 });
 });
 

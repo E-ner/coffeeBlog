@@ -15,6 +15,20 @@
                     <a href="{{route('home.menu')}}" class="nav-item nav-link">Menu</a>
                     <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
                     <a href="{{route('clients')}}" class="nav-item nav-link">Testimonials</a>
+                    @guest()
+                    <a href="{{route('login')}}" class="nav-item nav-link">Login</a>
+                    @endguest
+                    @auth
+                    <a class="nav-item nav-link" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                @endauth
                 </div>
             </div>
         </nav>
