@@ -98,6 +98,34 @@
                     </div>
                     <div class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="{{asset('front/img/menu-5.jpg')}}" alt="">
+                            <h5 class="menu-price">$5</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Espresso coffee </h4>
+                            <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor
+                            <div>
+                                    <a class="btn btn-primary btn-block font-weight-bold py-3" type="submit">Request Now</a>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="{{asset('front/img/menu-4.jpg')}}" alt="">
+                            <h5 class="menu-price">$5</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Dark roasts coffee</h4>
+                            <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor
+                            <div>
+                                    <a class="btn btn-primary btn-block font-weight-bold py-3" type="submit">Request Now</a>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
                             <img class="w-100 rounded-circle mb-3 mb-sm-0" src="{{asset('front/img/menu-2.jpg')}}" alt="">
                             <h5 class="menu-price">$7</h5>
                         </div>
@@ -143,6 +171,34 @@
                     </div>
                     <div class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="{{asset('front/img/menu-5.jpg')}}" alt="">
+                            <h5 class="menu-price">$5</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Espresso coffee </h4>
+                            <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor
+                            <div>
+                                    <a class="btn btn-primary btn-block font-weight-bold py-3" type="submit">Request Now</a>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="{{asset('front/img/menu-4.jpg')}}" alt="">
+                            <h5 class="menu-price">$5</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Dark roasts coffee</h4>
+                            <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor
+                            <div>
+                                    <a class="btn btn-primary btn-block font-weight-bold py-3" type="submit">Request Now</a>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
                             <img class="w-100 rounded-circle mb-3 mb-sm-0" src="{{asset('front/img/menu-2.jpg')}}" alt="">
                             <h5 class="menu-price">$7</h5>
                         </div>
@@ -155,6 +211,7 @@
                             </p>
                         </div>
                     </div>
+                    
                     <div class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
                             <img class="w-100 rounded-circle mb-3 mb-sm-0" src="{{asset('front/img/menu-3.jpg')}}" alt="">
