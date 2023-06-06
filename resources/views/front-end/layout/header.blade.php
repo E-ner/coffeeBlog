@@ -7,29 +7,7 @@
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto p-4">
-                    <a href="{{route('index')}}" class="nav-item nav-link active">Home</a>
-                    <a href="{{route('about')}}" class="nav-item nav-link">About</a>
-                    <a href="{{route('services')}}" class="nav-item nav-link">Service</a>
-                    <a href="{{route('home.menu')}}" class="nav-item nav-link">Menu</a>
-                    <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
-                    <a href="{{route('clients')}}" class="nav-item nav-link">Testimonials</a>
-                    @guest()
-                    <a href="{{route('login')}}" class="nav-item nav-link">Login</a>
-                    @endguest
-                    @auth
-                    <a class="nav-item nav-link" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                @endauth
-                </div>
+            @yield('active')
             </div>
         </nav>
     </div>
